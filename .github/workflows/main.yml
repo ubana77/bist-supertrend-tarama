@@ -1,10 +1,7 @@
 name: BIST Supertrend Tarama
 
 on:
-  schedule:
-    # 15:40 UTC = 18:40 Türkiye Saati
-    - cron: '40 20 * * 1-5'
-  workflow_dispatch:
+    workflow_dispatch:
 
 permissions:
   contents: write
