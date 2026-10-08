@@ -232,10 +232,10 @@ def build_telegram_message(signals, scan_time_str, total_symbols):
     ]
     for s in signals:
         lines.append(
-            f"🚀 <b>{s['Hisse']}</b>\n"
-            f"   💰 Fiyat: <code>{s['Kapanış Fiyatı']:.2f}</code> TL\n"
-            f"   🛡 Supertrend Destek: <code>{s['Supertrend Stop']:.2f}</code> TL\n"
-            f"   📏 Stop Risk Mesafesi: <code>%{s['Stop Mesafesi (%)']:.2f}</code>"
+            f"🟢 <b>{s['Hisse']}</b>\n"
+            f"    Fiyat: <code>{s['Kapanış Fiyatı']:.2f}</code> TL\n"
+            f"    Supertrend Destek: <code>{s['Supertrend Stop']:.2f}</code> TL\n"
+            f"    Stop Risk Mesafesi: <code>%{s['Stop Mesafesi (%)']:.2f}</code>"
         )
     lines.append("━━━━━━━━━━━━━━━━━━━━")
     lines.append("<i>⚠ Yatırım tavsiyesi değildir.</i>")
